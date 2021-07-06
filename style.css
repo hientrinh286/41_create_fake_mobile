@@ -135,7 +135,7 @@
 
 #btn-action-mess-one {
     width: 100%;
-    position: fixed;
+    position: absolute;
     top: 500px;
 
 }
