@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Phone</title>
+    <link rel='stylesheet' href='style.css'>
+</head>
+<body>
+    <div class='mobileStyle-one'> <!--Design the first screen-->
+        <table class='notices-bar'>
+            <tr>
+                <td id='time-phone-one' style='margin:auto; text-align: center;'>16:02</td>
+                <td id='phone-name-one'width='200px'></td>
+                <td id='inbox-icon'></td>
+                <td><img src='wifi_icon2.png' width="15px"></img></td>
+                <td><img src='wave_signal_icon.png' width="15px"></img></td>
+                <td id='battery-one'>95%</td>
+            </tr>
+        </table>
+        <table class='screen-center-one' id='screen-center-one'>
+            <tr>
+                <td><input  id='search-input' type='search' placeholder="Search" size="40px"></td>
+            </tr>
+        </table>
+        <div class='mess-screen'> <!--Design the mess screen of first mobile-->
+            <table class='frame-mess-screen-one' id='frame-mess-screen-one' hidden>
+                <thead>
+                    <tr>
+                        <td><h3 id='unReadInbox'><center>MESSAGE</center></h3></td>
+                    </tr>
+                </thead>
+                <tbody id='btn-action-mess-one'>
+                    <tr>
+                        <td> <button class='button-mess-one' onclick='clickWriteMess()'>Write Message</button></td>
+                    </tr>
+                    <tr>
+                        <td> <button class='button-mess-one'>Inbox</button></td>
+                    </tr>
+                    <tr>
+                        <td> <button class='button-mess-one'>Sent</button></td>
+                    </tr>
+                </tbody>
+                <tbody id='text-area' hidden>
+                    <tr id='send-message-to-number' colspan='2'>
+                        <td ><input type="'text" id='receipient' placeholder="Receipient"></td>
+                    </tr>
+                    <tr id='text-message-area' colspan='2'>
+                        <td>
+                            <textarea id='content-area'></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><button id='btn-send' onclick='sentMessage()'>Send</button></td>
+                        <td><button id='btn-cancel' onclick='cancelMessage()'>Cancel</button></td>
+                    </tr>
+                </tbody>  
+            </table>
+        </div>
+        <table class='icon-bar-one' id='icon-bar-one'>
+            <tr>
+                <td id='phone-icon'><center><img src='2_samsung_icon/phone_icon.png' width='30px' onclick='alertbutton()'></center></td>
+                <td id='message-icon'><center><img src='2_samsung_icon/message_icon.png' width='30px' onclick='clickMessIcon()'></center></td>
+                <td id='web-browser-icon'><center><img src='2_samsung_icon/web_browser_icon.png' width='30px' onclick='alertbutton()'></center></td>
+                <td id='camera-icon'><center><img src='2_samsung_icon/camera_icon.png' width='30px' onclick='alertbutton()'></center></td>
+            </tr>
+        </table>
+        <table class='key-home'>
+            <tr>
+                <center>
+                <td><center><img src='2_samsung_icon/multi_icon.png' width='15px'></center></td>
+                <td><center><img src='2_samsung_icon/home-button-icon.png' width='15px' onclick='btn_home()'></td>
+                <td><center><img src='2_samsung_icon/return_icon2.png' width='7px'></td>
+                </center>
+            </tr>
+        </table>
+    
+    </div>
+    
+    <div class='mobileStyle-two'> <!--Design the second screen-->
+        <table class='notices-bar-two'>
+            <tr>
+                <td id='time-phone-two'>16:02</td>
+                <td width='10px'><img id='note-message-two' width='15px'></td>
+                <td width='20px'></td>
+                <center><td id='rabbit-ear' style='margin-left:50px; text-align: center;'></td></center>
+                <td id='inbox-icon'></td>
+                <td><img src='wifi_icon2.png' width="15px"></img></td>
+                <td><img src='wave_signal_icon.png' width="15px"></img></td>
+                <td id='battery-two'>95%</td>
+            </tr>
+        </table>
+        <table class='screen-center-two'> <!--Screen of second phone-->
+            <tr class='cell-screen-center-two'>
+                <td><img src='1_iphone_icon\1_mess_icon.png' width='40px'><br><p class='font-icon-two'>Message</p></td>
+                <td><img src='1_iphone_icon\2_calendar_icon.png' width='40px' onclick='alertbutton()'><br><p class='font-icon-two' >Calendar</p></td>
+                <td><img src='1_iphone_icon\3_photo_icon.png' width='40px' onclick='alertbutton()'><br><p class='font-icon-two'>Photo</p></td>
+                <td><img src='1_iphone_icon\4_camera_icon.png' width='40px' onclick='alertbutton()'><br><p class='font-icon-two'>Camera</p></td>
+            </tr>
+            <!--<tr class='font-icon-two'>
+                <td>Message</td>
+                <td>Calendar</td>
+                <td>Photo</td>
+                <td>Camera</td>-->
+            </tr>
+            <tr class='cell-screen-center-two'>
+                <td><img src='1_iphone_icon\5_weather_icon.png' width='40px' onclick='alertbutton()'><br><p class='font-icon-two'>Weather</p></td>
+                <td><img src='1_iphone_icon\6_clock_icon.png' width='40px' onclick='alertbutton()'><br><p class='font-icon-two'>Clock</p></td>
+                <td><img src='1_iphone_icon\7_google_map_icon.png' width='40px' onclick='alertbutton()'><br><p class='font-icon-two'>Google Map</p></td>
+                <td><img src='1_iphone_icon\8_note_icon.png' width='40px' onclick='alertbutton()'><br><p class='font-icon-two'>Note</p></td>
+            </tr >
+            <tr class='cell-screen-center-two'>
+                <td><img src='1_iphone_icon\9_stock_icon.png' width='40px' onclick='alertbutton()'><br><p class='font-icon-two'>Stock</p></td>
+                <td><img src='1_iphone_icon\10_app_store_icon.png' width='40px' onclick='alertbutton()'><br><p class='font-icon-two'>App Store</p></td>
+                <td><img src='1_iphone_icon\11_maps_icon.png' width='40px' onclick='alertbutton()'><br><p class='font-icon-two'>Maps</p></td>
+                <td><img src='1_iphone_icon\12_osx_daily_icon.png' width='40px' onclick='alertbutton()'><br><p class='font-icon-two'>OSX</p></td>
+            </tr>
+            <tr class='cell-screen-center-two'>
+                <td><img src='1_iphone_icon\13_skype_icon.png' width='40px' onclick='alertbutton()'><br><p class='font-icon-two'>Skype</p></td>
+                <td><img src='1_iphone_icon\14_setting_icon.png' width='40px' onclick='alertbutton()'><br><p class='font-icon-two'>Setting</p></td>
+                <td><img src='1_iphone_icon\15_twitter_icon.png' width='40px' onclick='alertbutton()'><br><p class='font-icon-two'>Twitter</p></td>
+                <td><img src='1_iphone_icon\16_instagram_icon.png' width='40px' onclick='alertbutton()'><br><p class='font-icon-two'>Instagram</p></td>
+            </tr>
+        </table>
+        <table class='icon-bar-two'>
+            <tr>
+                <td id='iphone_call_button.png' ><center><img src='4_iphone_icon/iphone_call_button.png' width='50px' onclick='alertbutton()'></center></td>
+                <td id='iphone_mess_button.png'><center><img src='4_iphone_icon/iphone_mess_button.png' width='50px' onclick='EnterMess()'></center></td>
+                <td id='iphone_safari_button'><center><img src='4_iphone_icon/iphone_safari_button.png' width='55px' onclick='alertbutton()'></center></td>
+                <td id='iphone_itune_button'><center><img src='4_iphone_icon/iphone_itune_button.png' width='50px' onclick='alertbutton()'></center></td>
+            </tr>
+        </table>
+
+
+    </div>
+<!--Javascript Source-->
+    <script src='Mobile.js'></script>
+    
+    
+    <script>
+        let samsung = new Mobile('Note 10 Plus');
+        let iphone = new Mobile('Iphone 12 Pro Max');
+        samsung.turnOn();
+        iphone.turnOn();
+        samsung.writeMessage('Xin chào iphone');
+        samsung.sendMessage(iphone);
+        console.log(iphone.readInbox());
+        document.getElementById('phone-name-one').innerHTML = samsung.name;
+        var name_mobile_one = samsung.name;
+        var name_mobile_two = iphone.name;
+        
+    </script>
+
+    <script>
+        function EnterMess(){
+            console.log(1);
+        }
+        
+        function alertbutton(){
+            playAlertTones();
+            //alert('This function has not been designed.');
+        }
+        function time(){
+            let d = new Date();
+            let hour = d.getHours();
+            let min = d.getMinutes();
+            if (hour<10){
+                hour = '0'+hour;
+            }
+            if (min<10){
+                min = '0'+min;
+            }
+            document.getElementById('time-phone-one').innerHTML = hour + ':'+min;
+            document.getElementById('time-phone-two').innerHTML = hour + ':'+min;
+            setTimeout('time()',1000);
+        }
+        time();
+
+        function clickWriteMess(){
+            document.getElementById('btn-action-mess-one').hidden = true;
+            document.getElementById('text-area').hidden = false;
+        }
+
+        function clickMessIcon(){
+            document.getElementById('screen-center-one').hidden = true;
+            document.getElementById('frame-mess-screen-one').hidden = false;
+            document.getElementById('icon-bar-one').hidden = true;
+            document.getElementById('text-area').hidden = true;
+            document.getElementById('btn-action-mess-one').hidden = false;
+            console.log(1);
+        }
+
+        function sentMessage(namePhone){
+            let message = document.getElementById('content-area').value;
+            document.getElementById('note-message-two').src = 'inbox_icon.png' 
+            
+            cancelMessage();
+            playInboxRingTone();
+
+        }
+
+        function cancelMessage(){
+            document.getElementById('frame-mess-screen-one').hidden = false;
+            document.getElementById('icon-bar-one').hidden = true;
+            document.getElementById('text-area').hidden = true;
+            document.getElementById('btn-action-mess-one').hidden = false;
+        }
+
+        function btn_home(){
+            document.getElementById('frame-mess-screen-one').hidden = true;
+            document.getElementById('icon-bar-one').hidden = false;
+            document.getElementById('text-area').hidden = true;
+            document.getElementById('btn-action-mess-one').hidden = true;
+            document.getElementById('screen-center-one').hidden = false;            
+        }
+
+        
+        function playInboxRingTone(){
+            var audio = new Audio('6_ring_tones/iphone_ringtones.mp3');
+            audio.play();
+        }
+
+        function playAlertTones(){
+            var audio2 = new Audio('6_ring_tones/alert_tones.mp3');
+            audio2.play();
+        }
+        
+    </script>
+</body>
+</html>

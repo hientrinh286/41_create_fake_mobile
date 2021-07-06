@@ -1,0 +1,196 @@
+.mobileStyle-one {
+    width : 308.8px;
+    height: 649.2px;
+    border: 10px solid black;
+    border-radius: 20px;
+    background-image: url('3_samsung_wall_paper/samsung_wallpaper2.jpg');
+    background-size: 308.8px, 649.2px;
+    float: left;
+    margin-right: 100px;
+}
+
+.mobileStyle-two {
+    width : 312.4px;
+    height: 643.2px;
+    border: 10px solid black;
+    border-radius: 30px;
+    background-image: url('5_iphone_wall_paper/iphone_wallpaper3.png');
+    background-size: 312.4px;
+    background-attachment: local;
+    border-collapse: collapse;
+    float: left;
+}
+
+.screen-mobile-one{
+    width: 100%;
+}
+
+.screen-center-one {
+    width: auto;
+    height: 550px;
+}
+
+.screen-center-two {
+    width: 312.4px;
+    margin-top: 50px;
+    margin-bottom: 150px;
+    margin-left: 0px auto;
+    margin-right: 0px auto;
+    /*border: 1px solid red;*/
+}
+
+.font-icon-two {
+    color: white;
+    height: fit-content;
+    margin-top: 0%;
+}
+.cell-screen-center-two {
+    height: 80px;
+    vertical-align: middle;
+    align-content: center;
+    margin: auto;
+}
+
+#phone-icon, #message-icon, #web-browser-icon, #camera-icon {
+    vertical-align: middle;
+    align-content: center;
+}
+
+.icon-bar-one{
+    width: 300px;
+    height: 50px;
+    position: fixed;
+    top: 590px;
+}
+
+.key-home{
+    width: 260px;
+    text-align: center;
+    position: fixed;
+    left:30px;
+    right:30px;
+    top:640px;
+}
+
+#rabbit-ear{
+    width: 250px;
+    border: 5px solid black;
+    background-color: black;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-collapse: collapse;
+}
+
+#empty-content{
+    width: 40px;
+}
+
+.icon-bar-two{
+    width: 90%;
+    height: 60px;
+    border: 1px solid mediumorchi;
+    border-radius: 15px;
+    align-content: center;
+    margin: auto;
+    background: rgba(248, 246, 248, 0.5)
+    /*filter: blur(1px);*/
+}
+
+.cell-screen-center-two {
+    float: inherit;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+.font-icon-two {
+    color: white;
+    font-style: normal;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 12px;
+}
+
+#search-input {
+    border-radius: 10px;
+    height: 30px;
+}
+
+#time-phone-one, #phone-name-one, #battery-one, #time-phone-two, #battery-two  {
+    color: black;
+    font-style: bold;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+}
+
+.frame-mess-screen-one {
+    width: 100%;
+    height: 100%;
+    
+}
+
+.icon-bar-button-one{
+    border: 0;
+    background: none;
+}
+
+#btn-action-mess-one {
+    width: 100%;
+    position: fixed;
+    top: 500px;
+
+}
+
+.button-mess-one {
+    width: 300px;
+    border-radius: 15px;
+}
+
+#content-area {
+    width: 290px;
+    height: 200px;
+    border-radius: 20px;
+    position: fixed;
+    top: 150px;
+    margin-left: 5px;
+    background: rgba(248, 246, 248, 0.5);
+    border: 1px solid black;
+}
+
+#to-anyone {
+    width: fit-content;
+    border: 1px solid red;
+}
+
+#receipient {
+    width: 290px;
+    height: 30px;
+    margin-left: 0px;
+    border-radius: 20px;
+    margin-left: 5px;
+    background: rgba(248, 246, 248, 0.5);
+    border: 1px solid black;
+}
+
+#send-message-to-number {
+    border: 1px solid red;
+    width: 100%;
+}
+
+#btn-send {
+    width: 60px;
+    position: fixed;
+    top: 360px;
+    margin-left: 170px;
+    background: rgba(248, 246, 248, 0.5);
+    border: 1px solid black;
+    border-radius: 20px;
+}
+#btn-cancel{
+    width: 60px;
+    position: fixed;
+    top: 360px;
+    margin-left: -70px;
+    background: rgba(248, 246, 248, 0.5);
+    border: 1px solid black;
+    border-radius: 20px;
+}
